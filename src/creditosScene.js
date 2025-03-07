@@ -7,8 +7,8 @@ class CreditosScene extends Phaser.Scene {
 
     //Carrega os assets necessários para a cena de créditos
     preload() {
-        this.load.image('creditos', '../assets/creditos.png');
-        this.load.image('botaoVoltar', '../assets/botaoVoltar.png');
+        this.load.image('creditos', 'assets/creditos.png');
+        this.load.image('botaoVoltar', 'assets/botaoVoltar.png');
     }
 
     //Cria os elementos visuais da cena de créditos

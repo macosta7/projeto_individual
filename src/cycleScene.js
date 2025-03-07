@@ -6,35 +6,35 @@ class CycleScene extends Phaser.Scene {
 
     preload() {
         // Carrega todas as imagens e spritesheets necessárias para a cena
-        this.load.image('fundoT1', '../assets/fundoT1.png');
-        this.load.image('bicicleta', '../assets/bicicleta.png');
-        this.load.image('botaoE', '../assets/botaoE.png');
-        this.load.image('fundoCiclismo', '../assets/fundoCiclismo.png');
-        this.load.image('linhaChegada', '../assets/linhaChegada.png');
-        this.load.image('barreiraLinhaChegada', '../assets/barreiraLinhaChegada.png');
-        this.load.image('estrela', '../assets/estrela.png');
-        this.load.image('barreiraDentro', '../assets/barreiraDentro.png');
-        this.load.image('barreiraFora', '../assets/barreiraFora.png');
-        this.load.image('barreiraCentro', '../assets/barreiraCentro.png');
-        this.load.image('barreiraCimaDireita', '../assets/barreiraCimaDireita.png');
-        this.load.image('barreiraCimaEsquerda', '../assets/barreiraCimaEsquerda.png');
-        this.load.image('barreiraBaixoDireita', '../assets/barreiraBaixoEsquerda.png');
-        this.load.image('barreiraBaixoEsquerda', '../assets/barreiraBaixoEsquerda.png');
-        this.load.image('barreiraBaixoCentroDireitaFora', '../assets/barreiraBaixoCentroDireitaFora.png');  
-        this.load.image('barreiraBaixoCentroDoEsquerdaFora', '../assets/barreiraCimaCentroEsquerdaFora.png');    
-        this.load.image('barreiraBaixoCentroEsquerdaFora', '../assets/barreiraBaixoCentroEsquerdaFora.png');    
-        this.load.image('barreiraBaixoCentroMeioFora', '../assets/barreiraBaixoCentroMeioFora.png');
-        this.load.image('barreiraBaixoDireitaFora', '../assets/barreiraBaixoDireitaFora.png');
-        this.load.image('barreiraBaixoEsquerdaFora', '../assets/barreiraBaixoEsquerdaFora.png');
-        this.load.image('barreiraCentroDireitaFora', '../assets/barreiraCentroDireitaFora.png');
-        this.load.image('barreiraCimaCentroDireitaFora', '../assets/barreiraCimaCentroDireitaFora.png');
-        this.load.image('barreiraCimaCentroEsquerdaFora', '../assets/barreiraCimaCentroEsquerdaFora.png');
-        this.load.image('barreiraCimaDireitaFora', '../assets/barreiraCimaDireitaFora.png');
-        this.load.image('barreiraCimaEsquerdaFora', '../assets/barreiraCimaEsquerdaFora.png');
+        this.load.image('fundoT1', 'assets/fundoT1.png');
+        this.load.image('bicicleta', 'assets/bicicleta.png');
+        this.load.image('botaoE', 'assets/botaoE.png');
+        this.load.image('fundoCiclismo', 'assets/fundoCiclismo.png');
+        this.load.image('linhaChegada', 'assets/linhaChegada.png');
+        this.load.image('barreiraLinhaChegada', 'assets/barreiraLinhaChegada.png');
+        this.load.image('estrela', 'assets/estrela.png');
+        this.load.image('barreiraDentro', 'assets/barreiraDentro.png');
+        this.load.image('barreiraFora', 'assets/barreiraFora.png');
+        this.load.image('barreiraCentro', 'assets/barreiraCentro.png');
+        this.load.image('barreiraCimaDireita', 'assets/barreiraCimaDireita.png');
+        this.load.image('barreiraCimaEsquerda', 'assets/barreiraCimaEsquerda.png');
+        this.load.image('barreiraBaixoDireita', 'assets/barreiraBaixoEsquerda.png');
+        this.load.image('barreiraBaixoEsquerda', 'assets/barreiraBaixoEsquerda.png');
+        this.load.image('barreiraBaixoCentroDireitaFora', 'assets/barreiraBaixoCentroDireitaFora.png');  
+        this.load.image('barreiraBaixoCentroDoEsquerdaFora', 'assets/barreiraCimaCentroEsquerdaFora.png');    
+        this.load.image('barreiraBaixoCentroEsquerdaFora', 'assets/barreiraBaixoCentroEsquerdaFora.png');    
+        this.load.image('barreiraBaixoCentroMeioFora', 'assets/barreiraBaixoCentroMeioFora.png');
+        this.load.image('barreiraBaixoDireitaFora', 'assets/barreiraBaixoDireitaFora.png');
+        this.load.image('barreiraBaixoEsquerdaFora', 'assets/barreiraBaixoEsquerdaFora.png');
+        this.load.image('barreiraCentroDireitaFora', 'assets/barreiraCentroDireitaFora.png');
+        this.load.image('barreiraCimaCentroDireitaFora', 'assets/barreiraCimaCentroDireitaFora.png');
+        this.load.image('barreiraCimaCentroEsquerdaFora', 'assets/barreiraCimaCentroEsquerdaFora.png');
+        this.load.image('barreiraCimaDireitaFora', 'assets/barreiraCimaDireitaFora.png');
+        this.load.image('barreiraCimaEsquerdaFora', 'assets/barreiraCimaEsquerdaFora.png');
 
         // Carrega a spritesheet do ciclista e do nadador
-        this.load.spritesheet('ciclista', '../assets/spritesheet_ciclista.png', { frameWidth: 68, frameHeight: 72 });
-        this.load.spritesheet('nadadorPe', '../assets/nadadorPe_sprite.png', { frameWidth: 16, frameHeight: 24 }); 
+        this.load.spritesheet('ciclista', 'assets/spritesheet_ciclista.png', { frameWidth: 68, frameHeight: 72 });
+        this.load.spritesheet('nadadorPe', 'assets/nadadorPe_sprite.png', { frameWidth: 16, frameHeight: 24 }); 
     }
 
     // Função que cria os elementos visuais da cena

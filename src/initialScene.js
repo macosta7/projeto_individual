@@ -10,10 +10,10 @@ class InitialScene extends Phaser.Scene {
     //Carrega os assets necessários para a cena inicial.
     preload() {
         this.load.image('fundo', 'assets/fundo.png'); // Carrega a imagem de fundo
-        this.load.image('titulo', '../assets/titulo.png'); // Carrega a imagem do título
-        this.load.image('botaoJogar', '../assets/botaoJogar.png'); // Carrega a imagem do botão de jogar
-        this.load.image('botaoCreditos', '../assets/botaoCreditos.png'); // Carrega a imagem do botão de créditos
-        this.load.image('botaoControles', '../assets/botaoControles.png'); // Carrega a imagem do botão de controles
+        this.load.image('titulo', 'assets/titulo.png'); // Carrega a imagem do título
+        this.load.image('botaoJogar', 'assets/botaoJogar.png'); // Carrega a imagem do botão de jogar
+        this.load.image('botaoCreditos', 'assets/botaoCreditos.png'); // Carrega a imagem do botão de créditos
+        this.load.image('botaoControles', 'assets/botaoControles.png'); // Carrega a imagem do botão de controles
     }
 
     

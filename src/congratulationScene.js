@@ -6,8 +6,8 @@ class CongratulationScene extends Phaser.Scene {
 
     // Carrega os assets necessários para a cena de parabens
     preload() {
-        this.load.image('fundoCongratulation', '../assets/fundoCongratulation.png'); // Carrega a imagem de fundo da cena de congratulação
-        this.load.image('botaoJogarNovamente', '../assets/botaoJogarNovamente.png'); // Carrega a imagem do botão de jogar novamente
+        this.load.image('fundoCongratulation', 'assets/fundoCongratulation.png'); // Carrega a imagem de fundo da cena de congratulação
+        this.load.image('botaoJogarNovamente', 'assets/botaoJogarNovamente.png'); // Carrega a imagem do botão de jogar novamente
     }
 
     // Cria os elementos visuais da cena de parabens

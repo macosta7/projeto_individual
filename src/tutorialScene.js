@@ -6,9 +6,9 @@ class TutorialScene extends Phaser.Scene {
 
     // Carrega os assets necessários para a cena de tutorial
     preload() {
-        this.load.image('fundoControles', '../assets/fundoControles.png'); // Carrega a imagem de fundo da cena de tutorial
-        this.load.image('movimentacao', '../assets/movimentacao.png'); // Carrega a imagem dos controles
-        this.load.image('botaoVoltar', '../assets/botaoVoltar.png'); // Carrega a imagem do botão de voltar
+        this.load.image('fundoControles', 'assets/fundoControles.png'); // Carrega a imagem de fundo da cena de tutorial
+        this.load.image('movimentacao', 'assets/movimentacao.png'); // Carrega a imagem dos controles
+        this.load.image('botaoVoltar', 'assets/botaoVoltar.png'); // Carrega a imagem do botão de voltar
     }
 
     // Cria os elementos visuais da cena de tutorial

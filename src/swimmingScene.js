@@ -8,19 +8,19 @@ class SwimmingScene extends Phaser.Scene {
     //Carrega os assets necessários para a cena de natação
     preload() {
         // Carregar imagens do fundo e dos elementos da fase
-        this.load.image('marFrente', '../assets/marFrente.png');
-        this.load.image('largada', '../assets/largada.png');
-        this.load.image('botaoE', '../assets/botaoE.png');
-        this.load.image('mar', '../assets/mar.png');
-        this.load.image('boiaLateral', '../assets/boiaLateral.png');
-        this.load.image('boiaCentro', '../assets/boiaCentro.png');
-        this.load.image('largadaTitulo', '../assets/largadaTitulo.png');
-        this.load.image('chegadaTitulo', '../assets/chegadaTitulo.png');
-        this.load.image('estrela', '../assets/estrela.png');
+        this.load.image('marFrente', 'assets/marFrente.png');
+        this.load.image('largada', 'assets/largada.png');
+        this.load.image('botaoE', 'assets/botaoE.png');
+        this.load.image('mar', 'assets/mar.png');
+        this.load.image('boiaLateral', 'assets/boiaLateral.png');
+        this.load.image('boiaCentro', 'assets/boiaCentro.png');
+        this.load.image('largadaTitulo', 'assets/largadaTitulo.png');
+        this.load.image('chegadaTitulo', 'assets/chegadaTitulo.png');
+        this.load.image('estrela', 'assets/estrela.png');
 
         // Carregar a sprite sheet do nadador      
-        this.load.spritesheet('nadadorPe', '../assets/nadadorPe_sprite.png', { frameWidth: 16, frameHeight: 24 }); 
-        this.load.spritesheet('nadador', '../assets/nadadornadando.png', { frameWidth: 24, frameHeight: 23 });
+        this.load.spritesheet('nadadorPe', 'assets/nadadorPe_sprite.png', { frameWidth: 16, frameHeight: 24 }); 
+        this.load.spritesheet('nadador', 'assets/nadadornadando.png', { frameWidth: 24, frameHeight: 23 });
     }
 
     //Criar os elementos visuais da cena de natação

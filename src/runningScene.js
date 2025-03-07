@@ -8,28 +8,28 @@ class RunningScene extends Phaser.Scene {
     //Carrega os assets necessários para a cena de corrida
     preload() {
         // Carregar imagens
-        this.load.image('fundoT2', '../assets/fundoTransicao2.png');
-        this.load.image('botaoE', '../assets/botaoE.png');
-        this.load.image('tenis', '../assets/tenis.png');
-        this.load.image('estrela', '../assets/estrela.png');
-        this.load.image('linhaChegadaCorrida', '../assets/linhaChegadaCorrida.png');
-        this.load.image('fundoCorrida', '../assets/fundoCorrida.png');
-        this.load.image('barreiraCima', '../assets/barreiraCima.png');
-        this.load.image('barreiraBaixo', '../assets/barreiraBaixo.png');
-        this.load.image('barreiraEsquerda', '../assets/barreiraEsquerda.png');
-        this.load.image('barreiraDireita', '../assets/barreiraDireita.png');
-        this.load.image('barreiraSuperiorEsquerda', '../assets/barreiraSuperiorEsquerda.png');
-        this.load.image('barreiraSuperiorDireita', '../assets/barreiraSuperiorDireita.png');
-        this.load.image('barreiraInferiorDireita', '../assets/barreiraInferiorDireita.png');
-        this.load.image('barreiraInicio', '../assets/barreiraInicio.png');
-        this.load.image('barreiraBaixoCentro', '../assets/barreiraBaixoCentro.png');
-        this.load.image('barreiraCimaCentro', '../assets/barreiraCimaCentro.png');
-        this.load.image('barreiraEsquerdaCentro', '../assets/barreiraEsquerdaCentro.png');
-        this.load.image('barreiraDireitaCentro', '../assets/barreiraDireitaCentro.png');
+        this.load.image('fundoT2', 'assets/fundoTransicao2.png');
+        this.load.image('botaoE', 'assets/botaoE.png');
+        this.load.image('tenis', 'assets/tenis.png');
+        this.load.image('estrela', 'assets/estrela.png');
+        this.load.image('linhaChegadaCorrida', 'assets/linhaChegadaCorrida.png');
+        this.load.image('fundoCorrida', 'assets/fundoCorrida.png');
+        this.load.image('barreiraCima', 'assets/barreiraCima.png');
+        this.load.image('barreiraBaixo', 'assets/barreiraBaixo.png');
+        this.load.image('barreiraEsquerda', 'assets/barreiraEsquerda.png');
+        this.load.image('barreiraDireita', 'assets/barreiraDireita.png');
+        this.load.image('barreiraSuperiorEsquerda', 'assets/barreiraSuperiorEsquerda.png');
+        this.load.image('barreiraSuperiorDireita', 'assets/barreiraSuperiorDireita.png');
+        this.load.image('barreiraInferiorDireita', 'assets/barreiraInferiorDireita.png');
+        this.load.image('barreiraInicio', 'assets/barreiraInicio.png');
+        this.load.image('barreiraBaixoCentro', 'assets/barreiraBaixoCentro.png');
+        this.load.image('barreiraCimaCentro', 'assets/barreiraCimaCentro.png');
+        this.load.image('barreiraEsquerdaCentro', 'assets/barreiraEsquerdaCentro.png');
+        this.load.image('barreiraDireitaCentro', 'assets/barreiraDireitaCentro.png');
 
         // Carregar spritesheets dos personagens
-        this.load.spritesheet('ciclista', '../assets/spritesheet_ciclista.png', { frameWidth: 68, frameHeight: 72 });
-        this.load.spritesheet('corredor', '../assets/spritesheet_corredor.png', { frameWidth: 77, frameHeight: 70 });
+        this.load.spritesheet('ciclista', 'assets/spritesheet_ciclista.png', { frameWidth: 68, frameHeight: 72 });
+        this.load.spritesheet('corredor', 'assets/spritesheet_corredor.png', { frameWidth: 77, frameHeight: 70 });
     }
 
     //Cria os elementos visuais da cena de corrida
