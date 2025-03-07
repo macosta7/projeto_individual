@@ -1,0 +1,65 @@
+<!DOCTYPE html> <!-- Declaração do tipo de documento como HTML5 -->
+<html lang="en"> <!-- Início do documento HTML com o idioma definido como inglês -->
+
+<head>    <!-- Cabeçalho do documento HTML -->
+    <meta charset="UTF-8">    <!-- Define a codificação de caracteres como UTF-8 -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <!-- Configura a viewport para garantir que a página seja renderizada corretamente em dispositivos móveis -->
+
+    <title>Projeto Individual</title>    <!-- Título da página que aparece na aba do navegador -->
+
+    <script src="phaser.js"></script>    <!-- Inclui a biblioteca Phaser -->
+    <script src="initialScene.js"></script>    <!-- Inclui o script da cena inicial -->
+    <script src="swimmingScene.js"></script>    <!-- Inclui o script da cena de natação -->
+    <script src="cycleScene.js"></script>    <!-- Inclui o script da cena de ciclismo -->
+    <script src="runningScene.js"></script>    <!-- Inclui o script da cena de corrida -->
+    <script src="creditosScene.js"></script>    <!-- Inclui o script da cena de créditos -->
+    <script src="congratulationScene.js"></script>    <!-- Inclui o script da cena de parabens -->
+    <script src="tutorialScene.js"></script>    <!-- Inclui o script do tutorial -->
+
+</head>
+
+<body>
+    <!-- Corpo do documento HTML -->
+    <script>
+        //Define a largura e altura do jogo 
+        const larguraJogo = 1520;
+        const alturaJogo = 755;
+        
+        //Variáveis para armazenar diferentes tempos no jogo
+        var tempoFrontMar = 0;
+        var tempoUpMar = 0;
+        var tempoInicio = 0;
+        var tempoTransicao1 = 0;
+        var tempoCycling = 0;
+        var tempoTransicao2 = 0;
+        var tempoRunning = 0;
+
+        //Variáveis para armazenar a quantidade de estrelas obtidas em cada cena
+        var estrelasSwimming = 0;
+        var estrelasCycling = 0;
+        var estrelasRunning = 0;
+
+        //Configuração do jogo Phaser, incluindo tipo de renderização, dimensões, física e cenas
+        const config = {
+            type: Phaser.AUTO,
+            width: larguraJogo,
+            height: alturaJogo,
+            physics: {
+                default: 'arcade',
+                arcade: {
+                    gravity: { y: 0 },
+                    debug: false,
+                }
+            },
+            scene: [InitialScene, SwimmingScene, CycleScene, RunningScene, CongratulationScene, CreditosScene, TutorialScene]
+        };
+
+        //Criação de uma nova instância do jogo Phaser com a configuração definida
+        const game = new Phaser.Game(config);
+
+    </script>
+</body>
+
+</html>
+<!-- Fim do documento HTML -->
