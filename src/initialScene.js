@@ -37,4 +37,5 @@ class InitialScene extends Phaser.Scene {
             this.scene.start('tutorialScene'); // Inicia a cena de controles ao clicar no botão de controles
         });  
     }
+
 }
