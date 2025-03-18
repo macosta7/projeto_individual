@@ -21,11 +21,6 @@ class SwimmingScene extends Phaser.Scene {
         // Carregar a sprite sheet do nadador      
         this.load.spritesheet('nadadorPe', 'assets/nadadorPe_sprite.png', { frameWidth: 16, frameHeight: 24 }); 
         this.load.spritesheet('nadador', 'assets/nadadornadando.png', { frameWidth: 24, frameHeight: 23 });
-
-        this.load.image('w', 'assets/w.png');
-        this.load.image('a', 'assets/a.png');
-        this.load.image('s', 'assets/s.png');
-        this.load.image('d', 'assets/d.png');
     }
 
     //Criar os elementos visuais da cena de natação
@@ -153,8 +148,6 @@ class SwimmingScene extends Phaser.Scene {
 
     // Método para criar a fase inicial da natação
     frontMar() {
-        this.movimentacao();
-        
         // Criar a imagem de fundo primeiro
         this.marFrenteImage = this.add.image(larguraJogo / 2, alturaJogo / 2, 'marFrente');
         this.largada = this.add.image(larguraJogo - 300, alturaJogo - 200, 'largada');
@@ -255,34 +248,5 @@ class SwimmingScene extends Phaser.Scene {
     changeScene() {
         tempoUpMar = Math.floor((this.time.now - this.tempoInicio) / 1000); // Armazena tempo gasto em upMar
         this.scene.start('cycleScene'); // Transição para cycleScene.js
-    }
-
-    movimentacao() {
-        if (!game.device.os.desktop) {
-            this.a = this.add.image(larguraJogo - 1200, alturaJogo, 'a').setInteractive();
-            this.d = this.add.image(larguraJogo - 1100, alturaJogo, 'd').setInteractive();
-
-            this.a.on('pointerdown', () => {
-                this.nadadorPe.setVelocityX(-250);
-                this.nadadorPe.anims.play('walking', true);
-                this.nadadorPe.setFlipX(true);
-            });
-
-            this.a.on('pointerup', () => {
-                this.nadadorPe.setVelocityX(0);
-                this.nadadorPe.anims.stop();
-            });
-
-            this.d.on('pointerdown', () => {
-                this.nadadorPe.setVelocityX(250);
-                this.nadadorPe.anims.play('walking', true);
-                this.nadadorPe.setFlipX(false);
-            });
-
-            this.d.on('pointerup', () => {
-                this.nadadorPe.setVelocityX(0);
-                this.nadadorPe.anims.stop();
-            });
-        }
     }
 }
